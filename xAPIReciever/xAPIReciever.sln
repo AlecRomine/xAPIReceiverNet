@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xAPIReceiver", "xAPIReceiver\xAPIReceiver.csproj", "{59227C39-960E-4C20-9B97-D5321C53A87B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{7172E392-40DB-4BFB-921B-D506B3C3E187}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59227C39-960E-4C20-9B97-D5321C53A87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59227C39-960E-4C20-9B97-D5321C53A87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59227C39-960E-4C20-9B97-D5321C53A87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59227C39-960E-4C20-9B97-D5321C53A87B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7172E392-40DB-4BFB-921B-D506B3C3E187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7172E392-40DB-4BFB-921B-D506B3C3E187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7172E392-40DB-4BFB-921B-D506B3C3E187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7172E392-40DB-4BFB-921B-D506B3C3E187}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E03A645B-4EBF-4B29-8A24-7D470D5E29DD}
+	EndGlobalSection
+EndGlobal

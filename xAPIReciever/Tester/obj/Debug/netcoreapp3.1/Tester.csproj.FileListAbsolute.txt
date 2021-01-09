@@ -1,0 +1,16 @@
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Tester.exe
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.csprojAssemblyReference.cache
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.AssemblyInfoInputs.cache
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.AssemblyInfo.cs
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.csproj.CopyComplete
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Tester.deps.json
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Tester.runtimeconfig.json
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Tester.runtimeconfig.dev.json
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Tester.dll
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Tester.pdb
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Schema.dll
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.csproj.CoreCompileInputs.cache
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.dll
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.pdb
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\Tester\obj\Debug\netcoreapp3.1\Tester.genruntimeconfig.cache
