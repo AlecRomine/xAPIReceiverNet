@@ -1,6 +1,5 @@
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\xAPIReceiver.exe
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\xAPIReceiver.deps.json
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\xAPIReceiver.runtimeconfig.json
@@ -37,3 +36,5 @@ C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debu
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Schema.dll
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\obj\Debug\netcoreapp3.1\xAPIReceiver.csproj.CoreCompileInputs.cache
 C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\obj\Debug\netcoreapp3.1\xAPIReceiver.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\obj\Debug\netcoreapp3.1\scopedcss\bundle\xAPIReceiver.styles.css
+C:\Users\jgedney\source\repos\xAPIRecieverNet\xAPIReciever\xAPIReceiver\bin\Debug\netcoreapp3.1\web.config

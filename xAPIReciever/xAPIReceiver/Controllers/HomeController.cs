@@ -22,7 +22,7 @@ namespace xAPIReceiver.Controllers
         {
             return View();
         }
-
+     
         public IActionResult Privacy()
         {
             return View();

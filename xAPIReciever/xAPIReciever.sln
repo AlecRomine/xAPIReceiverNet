@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xAPIReceiver", "xAPIReceiver\xAPIReceiver.csproj", "{59227C39-960E-4C20-9B97-D5321C53A87B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xAPIReceiver", "xAPIReceiver\xAPIReceiver.csproj", "{59227C39-960E-4C20-9B97-D5321C53A87B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{7172E392-40DB-4BFB-921B-D506B3C3E187}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tester", "Tester\Tester.csproj", "{7172E392-40DB-4BFB-921B-D506B3C3E187}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
