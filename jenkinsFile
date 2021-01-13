@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+
+   
+    environment {
+        dotnet ='C:\\Program Files (x86)\\dotnet\\'
+        }
+        
+  stages{
+ 	stage('Checkout') {
+    	   steps {
+     		git url: 'https://github.com/US-ELRR/xAPIRecieverNet.git', branch: 'main'
+           }
+     	}
+        stage('Clean'){
+ 	   steps{
+        	bat "dotnet clean xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj"
+     	        }
+   	}
+	stage('Build'){
+	    steps{
+      		bat "dotnet build xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj" --configuration Release"
+	    }
+ 	}
+    }
+}
