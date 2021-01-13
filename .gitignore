@@ -139,3 +139,12 @@ xAPIReciever/xAPIReceiver/obj/Release/netcoreapp3.1/xAPIReceiver.Views.dll
 xAPIReciever/xAPIReceiver/obj/Release/netcoreapp3.1/xAPIReceiver.Views.pdb
 xAPIReciever/xAPIReceiver/Properties/PublishProfiles/FolderProfile.pubxml
 xAPIReciever/xAPIReceiver/Properties/PublishProfiles/FolderProfile.pubxml.user
+xAPIReciever/xAPIReceiver/bin/Debug/netcoreapp3.1/xAPIReceiver.dll
+*.dll
+xAPIReciever/xAPIReceiver/bin/Debug/netcoreapp3.1/xAPIReceiver.dll
+xAPIReciever/xAPIReceiver/obj/Debug/netcoreapp3.1/xAPIReceiver.csprojAssemblyReference.cache
+xAPIReciever/xAPIReceiver/obj/Debug/netcoreapp3.1/xAPIReceiver.dll
+xAPIReciever/xAPIReceiver/obj/Debug/netcoreapp3.1/xAPIReceiver.pdb
+xAPIReciever/xAPIReceiver/obj/Debug/netcoreapp3.1/xAPIReceiver.Views.dll
+xAPIReciever/xAPIReceiver/obj/Debug/netcoreapp3.1/xAPIReceiver.Views.pdb
+xAPIReciever/xAPIReceiver/obj/Release/netcoreapp3.1/xAPIReceiver.csprojAssemblyReference.cache

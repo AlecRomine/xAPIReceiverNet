@@ -36,12 +36,53 @@ namespace xAPIReceiver.Controllers
             HttpResponseMessage rsp = new HttpResponseMessage(System.Net.HttpStatusCode.Created);
             string message = getstring(body).Result;
             dynamic msg = JsonConvert.DeserializeObject<dynamic>(message);
-            string soutput = String.Format("Actor: {0}, email: {1}, Verb: {2}, Category: {3}, Timestamp {4}", 
-                                  msg.actor.name,msg.actor.mbox,msg.verb.id,msg.context.contextActivities.category[0].id,msg.timestamp);
+            string verbdata = "";
+            if (msg.verb.id.ToString().Contains("abandoned"))
+            {
+                verbdata = string.Format("Course Abandoned after {0}", GetDuration(msg.result.duration));
+            }
+            else if (msg.verb.id.ToString().Contains("satisfied"))
+            {
+                verbdata = string.Format("Requirements Satisfied");
+            }
+            else if (msg.verb.id.ToString().Contains("launched"))
+            {
+                verbdata = string.Format("On-Line Course Launched - Mode Normal Browse");
+            }
+
+            else if (msg.verb.id.ToString().Contains("initialized"))
+                {
+                    verbdata = string.Format("Course Initialized ");
+            }
+            else if (msg.verb.id.ToString().Contains("completed"))
+            {
+                verbdata = string.Format("Course COMPLETED after {0}", GetDuration(msg.result.duration));
+            }
+            else 
+            { 
+                verbdata = string.Format("xAPI verb {0} unknown", msg.verb.id.ToString()); 
+            }
+
+            string soutput = String.Format("Actor: {0}, email: {1}, Action: {2}, Registration {4}, Timestamp {3}", 
+                                  msg.actor.name,msg.actor.mbox,verbdata,
+                                  msg.timestamp, msg.context.registration.ToString());
             string textstring = soutput;
             textstring += "\r\n";
             Log(textstring);
             return rsp;
+        }
+
+        private string GetDuration(dynamic duration)
+        {
+            string Duration = duration.ToString().Replace("PT", "").Replace("S", "");
+            int iH = Duration.IndexOf("H");
+            int iM = Duration.IndexOf("M");
+            int iS = Duration.Length;
+            string Hour = Duration.Substring(0, iH);
+            string Min = Duration.Substring(iH + 1, iM - (iH + 1));
+            string Sec = Duration.Substring(iM + 1);
+
+            return string.Format("{0} hours, {1} minutes {2} seconds", Hour, Min, Sec);
         }
 
         private void Log(string textstring)
