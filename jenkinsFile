@@ -7,18 +7,15 @@ pipeline{
         }
         
   stages{
- 	stage('Checkout') {
-    	   steps {
-     		git url: 'https://github.com/US-ELRR/xAPIRecieverNet.git', branch: 'main'
-           }
-     	}
-        stage('Clean'){
+     stage('Clean'){
  	   steps{
+            echo "Clean Bat"
         	bat "dotnet clean xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj"
      	        }
    	}
 	stage('Build'){
 	    steps{
+            echo "build Bat"
       		bat "dotnet build xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj --configuration Release"
 	        }
  	    }
