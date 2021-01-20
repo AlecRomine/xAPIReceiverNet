@@ -11,9 +11,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'build Bat'
-        bat 'dotnet clean xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj'
         echo 'building'
-        bat 'dotnet build xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj --configuration Release'
       }
     }
 
