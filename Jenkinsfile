@@ -12,6 +12,7 @@ pipeline {
       steps {
         echo 'build Bat'
         echo 'building'
+        bat 'dotnet build xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj  --configuration Release'
       }
     }
 
