@@ -19,7 +19,7 @@ pipeline {
       steps {
         echo 'perfoming publish to deploy folders'
         bat 'dotnet publish xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj  --configuration Release --framework netcoreapp3.1 --output .\\publish'
-        powershell 'get-childitem -Directory \'.\\publish\' -recurse'
+        powershell 'get-childitem \'.\\publish\' -recurse'
       }
     }
 
