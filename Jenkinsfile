@@ -1,3 +1,6 @@
+
+def template = library(identifier: 'JenkinsTemplates@main', retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/US-ELRR/JenkinsTemplates.git']))
+
 pipeline {
   agent any
   stages {
@@ -8,13 +11,16 @@ pipeline {
       }
     }
 
-    stage('Build') {
+      stage('Build') {
       steps {
+        /* 
         echo 'building'
         bat 'dotnet build xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj  --configuration Release'
+        */
+        template.ELRRbuildOps.dotnetBuild(this,"${env:WORKSPACE}\\xAPIReciever\\xAPIReceiver","xAPIReceiver.csproj",Release )
       }
     }
-
+    
     stage('Publish') {
       steps {
         echo 'perfoming publish to deploy folders'
