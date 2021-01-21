@@ -18,7 +18,7 @@ pipeline {
         bat 'dotnet build xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj  --configuration Release'
         */
         script{
-             dotnetBuild(this,"${env:WORKSPACE}\\xAPIReciever\\xAPIReceiver","xAPIReceiver.csproj",Release )
+             dotnetBuild(this,"${env:WORKSPACE}\\xAPIReciever\\xAPIReceiver","xAPIReceiver.csproj","Release" )
         }
       }
     }
