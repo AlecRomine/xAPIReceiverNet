@@ -1,5 +1,5 @@
 
-def template = library(identifier: 'JenkinsTemplates@main', retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/US-ELRR/JenkinsTemplates.git']))
+def template = @Library(identifier: 'JenkinsTemplates@main', retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/US-ELRR/JenkinsTemplates.git']))
 
 pipeline {
   agent any
