@@ -1,6 +1,5 @@
-libraries {
-     lib('ELRRLib')
- }
+
+@Library('ELRRLib')_
 
 
 pipeline {
