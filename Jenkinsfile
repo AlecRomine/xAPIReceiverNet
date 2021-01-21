@@ -17,7 +17,7 @@ pipeline {
         echo 'building'
         bat 'dotnet build xAPIReciever\\xAPIReceiver\\xAPIReceiver.csproj  --configuration Release'
         */
-        template.ELRRbuildOps.dotnetBuild(this,"${env:WORKSPACE}\\xAPIReciever\\xAPIReceiver","xAPIReceiver.csproj",Release )
+        ELRRbuildOps.dotnetBuild(this,"${env:WORKSPACE}\\xAPIReciever\\xAPIReceiver","xAPIReceiver.csproj",Release )
       }
     }
     
