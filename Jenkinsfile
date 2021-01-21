@@ -1,5 +1,5 @@
 
-def template = @Library(identifier: 'JenkinsTemplates@main', retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/US-ELRR/JenkinsTemplates.git']))
+@Library ('ELRRLib')_
 
 pipeline {
   agent any
