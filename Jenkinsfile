@@ -1,3 +1,8 @@
+libraries {
+     lib('ELRRLib')
+ }
+
+
 pipeline {
   agent any
   stages {
