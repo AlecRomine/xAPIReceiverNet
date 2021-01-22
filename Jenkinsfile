@@ -32,7 +32,10 @@ pipeline {
     stage('deploy'){
         steps{
             script{
-                sshPublisher(publishers: [sshPublisherDesc(configName: 'IISTest', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: './publish/**')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+                powershell label: 'Deployment', script: '''$Source = ".\\\\publish\\\\*.*"
+                $Destination = "\\\\172.31.0.157\\xAPIReceiver" 
+                New-Item -ItemType directory -Path $Destination -Force
+                Copy-Item -Recurse -Path $Source\\*.* -Destination $Destination -Force '''
             }
         }
     }
