@@ -87,21 +87,25 @@ namespace xAPIReceiver.Controllers
 
         private void Log(string textstring)
         {
+            StreamWriter sw = null;
             string logfilename = string.Format("C:\\Text\\Log{0}.txt", DateTime.Now.Date.ToString("MM-dd-yyyy"));
             if (!System.IO.Directory.Exists("C:\\Text\\")) 
             { 
                 System.IO.Directory.CreateDirectory("C:\\Text"); 
             }
-            if (!System.IO.File.Exists(logfilename))
-            {
-                System.IO.File.CreateText(logfilename);
-            }
-            if(new System.IO.FileInfo(logfilename).Length > 200000)
+            if (new System.IO.FileInfo(logfilename).Length > 200000)
             {
                 string oldLogFileName = string.Format("{0}-{1}.txt", logfilename.Replace(".txt", ""), DateTime.Now.ToString("HH-mm-ss"));
                 System.IO.File.Move(logfilename, oldLogFileName);
             }
-            StreamWriter sw = System.IO.File.AppendText(logfilename);
+            if (!System.IO.File.Exists(logfilename))
+            {
+                sw = System.IO.File.CreateText(logfilename);
+            }
+            else
+            {
+                sw = System.IO.File.AppendText(logfilename);
+            }
             sw.Write(textstring);
             sw.Flush();
             sw.Close();
