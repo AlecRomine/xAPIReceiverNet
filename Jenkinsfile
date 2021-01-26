@@ -32,10 +32,7 @@ pipeline {
     stage('deploy'){
         steps{
             script{
-                powershell label: 'Deployment', script: '''$Source = ".\\\\publish\\\\*.*"
-                $Destination = "\\\\172.31.0.157\\xAPIReceiver" 
-                New-Item -ItemType directory -Path $Destination -Force
-                Copy-Item -Recurse -Path $Source\\*.* -Destination $Destination -Force '''
+                ftpPublisher alwaysPublishFromMaster: true, continueOnError: false, failOnError: false, masterNodeName: '', paramPublish: null, publishers: [[configName: 'ELRR-Test', transfers: [[asciiMode: false, cleanRemote: true, excludes: '', flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: 'publish', sourceFiles: 'publish/*,publish/**/*']], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false]]
             }
         }
     }
