@@ -93,7 +93,7 @@ namespace xAPIReceiver.Controllers
             { 
                 System.IO.Directory.CreateDirectory("C:\\Text"); 
             }
-            if (new System.IO.FileInfo(logfilename).Length > 200000)
+            if ((System.IO.File.Exists(logfilename))&&( new System.IO.FileInfo(logfilename).Length > 200000))
             {
                 string oldLogFileName = string.Format("{0}-{1}.txt", logfilename.Replace(".txt", ""), DateTime.Now.ToString("HH-mm-ss"));
                 System.IO.File.Move(logfilename, oldLogFileName);
